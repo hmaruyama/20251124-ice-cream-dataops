@@ -29,8 +29,7 @@ jobs:
 
     environment: ${{ matrix.environment }}
     env:
-      # Cognite Toolkit environment variables
-      CDF_PROJECT: cdf-bootcamp-<n>-${{ matrix.environment }} # change <n> to your project number!
+      CDF_PROJECT: cdf-bootcamp-79-${{ matrix.environment }} # <n> を自身のプロジェクト番号に変更してください。
 
       CDF_CLUSTER: westeurope-1
       IDP_TENANT_ID: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
@@ -40,7 +39,6 @@ jobs:
       IDP_CLIENT_ID: ${{ vars.IDP_CLIENT_ID }}
       IDP_CLIENT_SECRET: ${{ secrets.IDP_CLIENT_SECRET }}
 
-      # This project's environment variables
       DATA_DEVELOPER_SOURCE_ID: ${{ vars.DATA_DEVELOPER_SOURCE_ID }}
 
       DATA_PIPELINE_OEE_CLIENT_ID: ${{ vars.DATA_PIPELINE_OEE_CLIENT_ID }}
